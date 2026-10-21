@@ -1,0 +1,7 @@
+experiment_id: added_mass_light
+description: Light structure to probe added-mass sensitivity
+domain: {Lx: 3.0, Ly: 1.0}
+fluid: {nx: 120, ny: 40, tau: 0.6, inlet_ux: 0.04}
+structure: {length: 0.3, n_nodes: 15, EI: 0.005, mass_per_length: 0.05, damping: 0.01}
+time: {dt: 0.005, n_steps: 300}
+coupling: {strategy: strong, max_iterations: 8, tolerance: 1e-4, relaxation: 0.6}

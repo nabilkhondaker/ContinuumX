@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "continuumx"
+version = "0.1.0"
+authors = [
+  {name = "Nabil Khondaker"}
+]
+description = "Coupled solid-fluid simulation engine for fluid-structure interaction"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.24",
+  "pyyaml>=6.0",
+  "scipy>=1.10",
+  "matplotlib>=3.7",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0", "pybind11>=2.10"]
+
+[project.scripts]
+continuumx = "continuumx.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

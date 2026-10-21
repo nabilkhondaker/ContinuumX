@@ -1,0 +1,7 @@
+experiment_id: cantilever_static
+description: Static tip load on cantilever
+domain: {Lx: 1.0, Ly: 0.5}
+fluid: {nx: 20, ny: 10, tau: 0.6, inlet_ux: 0.0}
+structure: {length: 1.0, n_nodes: 21, EI: 0.1, mass_per_length: 0.5, damping: 0.2}
+time: {dt: 0.005, n_steps: 500}
+coupling: {strategy: explicit}

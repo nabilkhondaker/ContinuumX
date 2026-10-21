@@ -1,0 +1,4 @@
+type: object
+properties:
+  strategy: {enum: [explicit, strong]}
+  tolerance: {type: number}

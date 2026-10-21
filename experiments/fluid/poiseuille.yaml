@@ -1,0 +1,7 @@
+experiment_id: poiseuille_channel
+description: Steady channel flow for viscosity check
+domain: {Lx: 2.0, Ly: 0.5}
+fluid: {nx: 80, ny: 40, tau: 0.8, inlet_ux: 0.02}
+structure: {length: 0.1, n_nodes: 5, EI: 1.0, mass_per_length: 1.0}
+time: {dt: 0.01, n_steps: 200}
+coupling: {strategy: explicit}

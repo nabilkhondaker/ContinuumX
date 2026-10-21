@@ -1,0 +1,1 @@
+fluid:\n  type: object\n  properties:\n    nx: {type: integer}\n    ny: {type: integer}\n    tau: {type: number}

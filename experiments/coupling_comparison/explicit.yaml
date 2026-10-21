@@ -1,0 +1,6 @@
+experiment_id: coupling_explicit
+domain: {Lx: 4.0, Ly: 1.0}
+fluid: {nx: 160, ny: 40, tau: 0.6, inlet_ux: 0.05}
+structure: {length: 0.4, n_nodes: 21, EI: 0.01, mass_per_length: 0.4}
+time: {dt: 0.01, n_steps: 200}
+coupling: {strategy: explicit}

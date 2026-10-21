@@ -1,0 +1,5 @@
+type: object
+properties:
+  length: {type: number}
+  n_nodes: {type: integer}
+  EI: {type: number}

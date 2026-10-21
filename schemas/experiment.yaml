@@ -1,0 +1,2 @@
+type: object
+required: [experiment_id, domain, fluid, structure, time]

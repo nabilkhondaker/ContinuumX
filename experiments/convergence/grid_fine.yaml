@@ -1,0 +1,6 @@
+experiment_id: grid_fine
+domain: {Lx: 4.0, Ly: 1.0}
+fluid: {nx: 240, ny: 60, tau: 0.6, inlet_ux: 0.05}
+structure: {length: 0.4, n_nodes: 31, EI: 0.01, mass_per_length: 0.5}
+time: {dt: 0.005, n_steps: 100}
+coupling: {strategy: explicit}

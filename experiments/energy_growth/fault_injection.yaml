@@ -1,0 +1,6 @@
+experiment_id: fault_injection
+domain: {Lx: 2.0, Ly: 1.0}
+fluid: {nx: 40, ny: 20, tau: 0.6}
+structure: {length: 0.2, n_nodes: 9, EI: 0.01, mass_per_length: 0.5}
+time: {dt: 0.01, n_steps: 50}
+coupling: {strategy: explicit}

@@ -1,0 +1,27 @@
+experiment_id: cantilever_vortex_demo
+description: Flexible cantilever in channel flow demonstrating FSI feedback
+
+domain:
+  Lx: 4.0
+  Ly: 1.0
+
+fluid:
+  nx: 200
+  ny: 50
+  tau: 0.6
+  inlet_ux: 0.05
+
+structure:
+  length: 0.4
+  n_nodes: 21
+  EI: 0.01
+  mass_per_length: 0.5
+  damping: 0.02
+
+time:
+  dt: 0.01
+  n_steps: 500
+
+coupling:
+  strategy: explicit
+  relaxation: 1.0
